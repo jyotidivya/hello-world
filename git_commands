@@ -1,0 +1,17 @@
+
+
+## creating git local repository
+
+-- create your project folder (/home/divya/{project_name})
+-- add your files
+-- to initialize git repository
+	-- git config --global user.email "tuxnoel@yahoo.co.in"
+  	-- git config --global user.name "Noel"
+	-- git init
+-- to add files to git repository
+	-- git add --all
+	-- git commit --all -m "Added initial files "
+-- git log (to check the log)
+-- git status (to check the status of repository)
+ 
+
