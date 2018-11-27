@@ -12,6 +12,41 @@
 	-- git add --all
 	-- git commit --all -m "Added initial files "
 -- git log (to check the log)
+-- git log <branch name>
 -- git status (to check the status of repository)
- 
+-- to revert to any commited version 
+	-- git checkout -f <commit's SHA1 sum>
+-- clean untracked file/directory
+	-- git clean -f -d
+-- to see the difference in working tree not yet commited
+	-- git diff
+-- to get remote and branch information
+	-- git remote show origin
+
+## push the project to remote github
+
+-- if we want to make changes in existing project of github then first clone it, make changes locally and then commit again
+	-- git clone https://github.com/jyotidivya/hello-world.git
+-- git remote add origin https://github.com/jyotidivya/hello-world.git
+-- git push origin -u master
+
+## if any error comes while push command (for-ex: size of file exceeds the maximum size of github's file)
+-- stage the file for removal , but leave it on disk.
+	-- git rm --cached file_name
+-- Amend the previous commit with your change. Simply making a new commit won't work, as you need to remove the file from the unpushed history as well
+	-- git commit --amend  -CHEAD
+-- git push origin -u master
+
+## create branches and work on it (on git local)
+-- to list the branches in repository
+	-- git branch
+-- git branch {new branch name} demo_branch
+-- switch to other branch, copies database and work on it
+	-- git checkout demo_branch
+-- git push origin {branch name} demo_branch
+-- to delete the branch
+	-- git branch -d {branch name}
+	
+
+
 
